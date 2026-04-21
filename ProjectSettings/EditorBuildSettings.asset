@@ -8,6 +8,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/1930.unity
+    guid: 9d28d840d7f4cf14d9c164712d329c53
+  - enabled: 1
+    path: Assets/Scenes/2010.unity
+    guid: 8bfb6828d52190b4cb8b5e64635b3790
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 6d176a2ba83bb874c8ed60fb7182ff2e, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 703a7119415f63b4ba560ee63a3e246b, type: 2}
   m_UseUCBPForAssetBundles: 0
