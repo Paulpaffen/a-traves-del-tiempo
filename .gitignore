@@ -105,3 +105,21 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# ── Custom (project-local, no necesitan versionarse) ──
+# Documentación / notas de sesión generadas localmente
+CLAUDE.md
+CONTEXTO_SESION.md
+*.md
+!README.md
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Carpetas de trabajo temporales
+/Recordings/
+/MemoryCaptures/
