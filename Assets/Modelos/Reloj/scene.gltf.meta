@@ -1,0 +1,58 @@
+fileFormatVersion: 2
+guid: fd56c5975f07d0645bceb82f92bfbb39
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 715df9372183c47e389bb6e19fbc3b52, type: 3}
+  editorImportSettings:
+    generateSecondaryUVSet: 0
+  importSettings:
+    nodeNameMethod: 1
+    animationMethod: 2
+    generateMipMaps: 1
+    texturesReadable: 0
+    defaultMinFilterMode: 9729
+    defaultMagFilterMode: 9729
+    anisotropicFilterLevel: 1
+  instantiationSettings:
+    mask: -1
+    layer: 0
+    skinUpdateWhenOffscreen: 1
+    lightIntensityFactor: 1
+    sceneObjectCreation: 2
+  assetDependencies:
+  - type: 0
+    originalUri: Assets\Modelos\Reloj\scene.bin
+    assetPath: Assets\Modelos\Reloj\scene.bin
+  - type: 1
+    originalUri: Assets\Modelos\Reloj\textures\antique_clock_1001_baseColor.jpeg
+    assetPath: Assets\Modelos\Reloj\textures\antique_clock_1001_baseColor.jpeg
+  - type: 1
+    originalUri: Assets\Modelos\Reloj\textures\antique_clock_1001_metallicRoughness.png
+    assetPath: Assets\Modelos\Reloj\textures\antique_clock_1001_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Modelos\Reloj\textures\antique_clock_1001_normal.png
+    assetPath: Assets\Modelos\Reloj\textures\antique_clock_1001_normal.png
+  - type: 1
+    originalUri: Assets\Modelos\Reloj\textures\bong_and_handle_1001_baseColor.jpeg
+    assetPath: Assets\Modelos\Reloj\textures\bong_and_handle_1001_baseColor.jpeg
+  - type: 1
+    originalUri: Assets\Modelos\Reloj\textures\bong_and_handle_1001_metallicRoughness.png
+    assetPath: Assets\Modelos\Reloj\textures\bong_and_handle_1001_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Modelos\Reloj\textures\bong_and_handle_1001_normal.png
+    assetPath: Assets\Modelos\Reloj\textures\bong_and_handle_1001_normal.png
+  - type: 1
+    originalUri: Assets\Modelos\Reloj\textures\antique_clock_glass_1001_baseColor.png
+    assetPath: Assets\Modelos\Reloj\textures\antique_clock_glass_1001_baseColor.png
+  - type: 1
+    originalUri: Assets\Modelos\Reloj\textures\antique_clock_glass_1001_metallicRoughness.png
+    assetPath: Assets\Modelos\Reloj\textures\antique_clock_glass_1001_metallicRoughness.png
+  - type: 1
+    originalUri: Assets\Modelos\Reloj\textures\antique_clock_glass_1001_normal.png
+    assetPath: Assets\Modelos\Reloj\textures\antique_clock_glass_1001_normal.png
+  reportItems: []
