@@ -1854,6 +1854,14 @@ PrefabInstance:
       propertyPath: reconnectBehaviour
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3723249095139361142, guid: 73369a530bd8253469d623a3ea6dcff9, type: 3}
+      propertyPath: servers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3723249095139361142, guid: 73369a530bd8253469d623a3ea6dcff9, type: 3}
+      propertyPath: 'servers.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 7ccc786e28f7b5440b540231829c3adc, type: 2}
     - target: {fileID: 3723249095209270462, guid: 73369a530bd8253469d623a3ea6dcff9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.409
