@@ -1145,6 +1145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RadioMusicParticles
   notaTextura: {fileID: 2800000, guid: 64e5ec5743918584c9b9bc20b2f745f7, type: 3}
+  materialNotas: {fileID: 2100000, guid: dbc3ee3c81d0ffe41982959aab1bf113, type: 2}
   colorInicial: {r: 1, g: 0.85, b: 0.3, a: 1}
   tamanoMinimo: 0.1
   tamanoMaximo: 0.2

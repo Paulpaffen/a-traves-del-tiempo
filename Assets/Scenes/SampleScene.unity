@@ -1426,10 +1426,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NarratorNetworkController
   steps:
-  - clip: {fileID: 8300000, guid: 4a3ff6ee560efad4d9ade4077bb2b53e, type: 3}
+  - clip: {fileID: 8300000, guid: 9721dcef786bec944813435dabdd77d8, type: 3}
     nextScene: 2010
   - clip: {fileID: 8300000, guid: ddc29c523f0b3ef4087ecc20fc4c3772, type: 3}
-    nextScene: 
+    nextScene: 2080
   resetScene: 1930
   narrationStartDelay: 2
   exitReturnDelay: 15

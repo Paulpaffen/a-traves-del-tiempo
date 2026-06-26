@@ -5,6 +5,9 @@ public class RadioMusicParticles : MonoBehaviour
 {
     [Header("Apariencia")]
     public Texture2D notaTextura;
+    [Tooltip("Material con shader 'Universal Render Pipeline/Particles/Unlit'. " +
+             "Asignarlo garantiza que el shader se incluya en el build de Quest.")]
+    public Material materialNotas;
     [ColorUsage(true, false)]
     public Color colorInicial = new Color(1f, 0.85f, 0.3f, 1f);
     public float tamanoMinimo = 0.04f;
@@ -98,14 +101,38 @@ public class RadioMusicParticles : MonoBehaviour
 
         if (notaTextura != null)
         {
-            Material mat = new Material(Shader.Find("Particles/Standard Unlit"));
+            Material mat;
+            if (materialNotas != null)
+            {
+                // Material asignado desde el Inspector: garantiza que el shader
+                // de URP se incluya en el build de Quest (sin riesgo de stripping).
+                mat = new Material(materialNotas);
+            }
+            else
+            {
+                // Fallback: buscar el shader de particulas de URP en runtime.
+                // (El Built-in "Particles/Standard Unlit" no existe en URP -> rosa.)
+                Shader shaderParticulas = Shader.Find("Universal Render Pipeline/Particles/Unlit");
+                if (shaderParticulas == null)
+                    shaderParticulas = Shader.Find("Sprites/Default");
+                mat = new Material(shaderParticulas);
+            }
+
+            // En URP la textura base es _BaseMap (mainTexture tambien la asigna).
+            mat.SetTexture("_BaseMap", notaTextura);
             mat.mainTexture = notaTextura;
-            mat.SetFloat("_Mode", 2f); // Fade
+            mat.SetColor("_BaseColor", Color.white);
+
+            // Transparencia con alpha blend.
+            mat.SetFloat("_Surface", 1f);   // 0 = Opaque, 1 = Transparent
+            mat.SetFloat("_Blend", 0f);     // 0 = Alpha
             mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
             mat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
-            mat.EnableKeyword("_ALPHATEST_ON");
+            mat.SetInt("_ZWrite", 0);
+            mat.EnableKeyword("_SURFACE_TYPE_TRANSPARENT");
             mat.EnableKeyword("_ALPHABLEND_ON");
-            mat.renderQueue = 3000;
+            mat.renderQueue = (int)UnityEngine.Rendering.RenderQueue.Transparent;
+
             renderer.material = mat;
         }
     }
