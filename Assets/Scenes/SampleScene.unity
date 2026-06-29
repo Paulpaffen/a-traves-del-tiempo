@@ -1428,8 +1428,10 @@ MonoBehaviour:
   steps:
   - clip: {fileID: 8300000, guid: 9721dcef786bec944813435dabdd77d8, type: 3}
     nextScene: 2010
-  - clip: {fileID: 8300000, guid: ddc29c523f0b3ef4087ecc20fc4c3772, type: 3}
+  - clip: {fileID: 8300000, guid: a5443cbb67a88e440839f6262ec57244, type: 3}
     nextScene: 2080
+  - clip: {fileID: 8300000, guid: 3fb5b2186d620434b93989be85481c2a, type: 3}
+    nextScene: 
   resetScene: 1930
   narrationStartDelay: 2
   exitReturnDelay: 15
